@@ -1,0 +1,446 @@
+{
+  "R01": {
+    "route_id": "R01",
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "late",
+    "delay_minutes": 12.0,
+    "confidence": 0.85,
+    "explanation": "Borivali (W) to BKC is LATE at 07:45 by about 12 min. Trip T0617-R01-02 (vehicle V02) was last seen 31s ago, 10.1 km along the route (46%); the timetable has it there at 07:32 and it was there at 07:44. 5 booked riders have not yet reached their boarding stop on this trip. Trip T0617-R01-03 could not be assessed: last ping is 11.5 min old (limit 8 min). Last known position was 1.0 km along the route. Context: over 8 earlier trips this route typically reaches the end +6.2 min vs the timetable (middle half +5.0 to +6.5); history this thin is indicative only. Relative to that usual pattern, today is about +6 min.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": "T0617-R01-02",
+      "trips": [
+        {
+          "trip_id": "T0617-R01-01",
+          "vehicle_id": "V01",
+          "kind": "completed",
+          "trip_status": "on_time",
+          "delay_minutes": 0.0,
+          "trust": "ok",
+          "confidence": 0.0,
+          "distance_along_m": 21728,
+          "pct_complete": 1.0,
+          "last_ping_time": "2026-06-17 07:44:32",
+          "data_age_s": 28,
+          "expected_time_at_position": null,
+          "observed_time_at_position": null,
+          "stopped_minutes": 0.0,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": null,
+          "departure": "06:30"
+        },
+        {
+          "trip_id": "T0617-R01-02",
+          "vehicle_id": "V02",
+          "kind": "live",
+          "trip_status": "late",
+          "delay_minutes": 12.0,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 10078,
+          "pct_complete": 0.464,
+          "last_ping_time": "2026-06-17 07:44:29",
+          "data_age_s": 31,
+          "expected_time_at_position": "2026-06-17 07:32:27",
+          "observed_time_at_position": "2026-06-17 07:44:29",
+          "stopped_minutes": 0.0,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": 5,
+          "departure": "07:00"
+        },
+        {
+          "trip_id": "T0617-R01-03",
+          "vehicle_id": "V03",
+          "kind": "live",
+          "trip_status": "unknown",
+          "delay_minutes": 0.4,
+          "trust": "untrustworthy",
+          "confidence": 0.0,
+          "distance_along_m": 973,
+          "pct_complete": 0.045,
+          "last_ping_time": "2026-06-17 07:33:30",
+          "data_age_s": 690,
+          "expected_time_at_position": "2026-06-17 07:33:08",
+          "observed_time_at_position": "2026-06-17 07:33:30",
+          "stopped_minutes": 0.0,
+          "flags": [],
+          "reasons": [
+            "last ping is 11.5 min old (limit 8 min)"
+          ],
+          "riders_ahead_of_bus": 17,
+          "departure": "07:30"
+        }
+      ],
+      "baseline": {
+        "n": 8,
+        "available": true,
+        "median_delay_min": 6.2,
+        "shrunk_delay_min": 4.1,
+        "q25": 5.0,
+        "q75": 6.5
+      }
+    },
+    "dashboard": {
+      "headline": "LATE by about 12 min",
+      "severity": "warning",
+      "how_late": "about 12 min behind the timetable",
+      "certainty": {
+        "label": "High",
+        "reason": "GPS updated 31 seconds ago"
+      },
+      "why": "Bus V02 reached its current point at 07:44. The timetable expects it there at 07:32.",
+      "evidence": [
+        "5 booked riders are still waiting at stops ahead.",
+        "The 07:30 trip could not be checked (GPS last seen 12 min ago)."
+      ],
+      "alternatives": [
+        "This route usually ends about 6 min late, so only about 6 min is unusual."
+      ],
+      "action": "Warn riders at stops ahead.",
+      "text": "LATE by about 12 min \u00b7 R01 Borivali (W) to BKC\nCertainty: High (GPS updated 31 seconds ago)\nWhy: Bus V02 reached its current point at 07:44. The timetable expects it there at 07:32.\nEvidence: 5 booked riders are still waiting at stops ahead. The 07:30 trip could not be checked (GPS last seen 12 min ago).\nCould also be: This route usually ends about 6 min late, so only about 6 min is unusual.\nDo next: Warn riders at stops ahead.",
+      "word_count": 82,
+      "read_seconds": 25
+    }
+  },
+  "R02": {
+    "route_id": "R02",
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "on_time",
+    "delay_minutes": 1.0,
+    "confidence": 0.71,
+    "explanation": "Thane to Navi Mumbai (Vashi) is on time at 07:45 (within 3 min of the timetable). Trip T0617-R02-02 (vehicle V06) was last seen 26s ago, 10.9 km along the route (79%); the timetable has it there at 07:43 and it was there at 07:44. Confidence note: device clock disagrees with the server, so arrival time was used instead. Context: over 8 earlier trips this route typically reaches the end +3.4 min vs the timetable (middle half +1.8 to +5.5); history this thin is indicative only.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": "T0617-R02-02",
+      "trips": [
+        {
+          "trip_id": "T0617-R02-01",
+          "vehicle_id": "V05",
+          "kind": "completed",
+          "trip_status": "on_time",
+          "delay_minutes": 0.0,
+          "trust": "ok",
+          "confidence": 0.0,
+          "distance_along_m": 13796,
+          "pct_complete": 1.0,
+          "last_ping_time": "2026-06-17 07:29:32",
+          "data_age_s": 928,
+          "expected_time_at_position": null,
+          "observed_time_at_position": null,
+          "stopped_minutes": 0.0,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": null,
+          "departure": "06:30"
+        },
+        {
+          "trip_id": "T0617-R02-02",
+          "vehicle_id": "V06",
+          "kind": "live",
+          "trip_status": "on_time",
+          "delay_minutes": 1.0,
+          "trust": "ok",
+          "confidence": 0.71,
+          "distance_along_m": 10929,
+          "pct_complete": 0.792,
+          "last_ping_time": "2026-06-17 07:44:33",
+          "data_age_s": 26,
+          "expected_time_at_position": "2026-06-17 07:43:34",
+          "observed_time_at_position": "2026-06-17 07:44:33",
+          "stopped_minutes": 0.0,
+          "flags": [
+            "CLOCK_CORRECTED"
+          ],
+          "reasons": [
+            "device clock disagrees with the server, so arrival time was used instead"
+          ],
+          "riders_ahead_of_bus": 0,
+          "departure": "07:00"
+        },
+        {
+          "trip_id": "T0617-R02-03",
+          "vehicle_id": "V18",
+          "kind": "live",
+          "trip_status": "on_time",
+          "delay_minutes": 0.9,
+          "trust": "ok",
+          "confidence": 0.85,
+          "distance_along_m": 3411,
+          "pct_complete": 0.247,
+          "last_ping_time": "2026-06-17 07:44:29",
+          "data_age_s": 31,
+          "expected_time_at_position": "2026-06-17 07:43:35",
+          "observed_time_at_position": "2026-06-17 07:44:29",
+          "stopped_minutes": 0.0,
+          "flags": [
+            "VEHICLE_SUBSTITUTED"
+          ],
+          "reasons": [
+            "pings come from V18, not the scheduled V07"
+          ],
+          "riders_ahead_of_bus": 6,
+          "departure": "07:30"
+        }
+      ],
+      "baseline": {
+        "n": 8,
+        "available": true,
+        "median_delay_min": 3.4,
+        "shrunk_delay_min": 2.2,
+        "q25": 1.8,
+        "q75": 5.5
+      }
+    },
+    "dashboard": {
+      "headline": "ON TIME",
+      "severity": "ok",
+      "how_late": "within 3 min of the timetable",
+      "certainty": {
+        "label": "Medium",
+        "reason": "GPS updated 26 seconds ago; tracker clock corrected"
+      },
+      "why": "Bus V06 is 79% of the way and 1 min behind the timetable.",
+      "evidence": [],
+      "alternatives": [
+        "The tracker clock was wrong; we corrected it, so the time may be off by a minute."
+      ],
+      "action": "No action; recheck in a few minutes.",
+      "text": "ON TIME \u00b7 R02 Thane to Navi Mumbai (Vashi)\nCertainty: Medium (GPS updated 26 seconds ago; tracker clock corrected)\nWhy: Bus V06 is 79% of the way and 1 min behind the timetable.\nCould also be: The tracker clock was wrong; we corrected it, so the time may be off by a minute.\nDo next: No action; recheck in a few minutes.",
+      "word_count": 62,
+      "read_seconds": 19
+    }
+  },
+  "R03": {
+    "route_id": "R03",
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "unknown",
+    "delay_minutes": null,
+    "confidence": 0.2,
+    "explanation": "Cannot tell whether Ghatkopar to BKC is late at 07:45. Trip T0617-R03-02 looks fine (+2.0 min), but another live trip has no trustworthy position, and missing data is not treated as on time. Trip T0617-R03-02 (vehicle V10) was last seen 33s ago, 4.7 km along the route (92%); the timetable has it there at 07:42 and it was there at 07:44. Trip T0617-R03-03 could not be assessed: last ping is 11.5 min old (limit 8 min). Last known position was 0.5 km along the route. Context: over 8 earlier trips this route typically reaches the end +2.3 min vs the timetable (middle half +0.8 to +3.1); history this thin is indicative only.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": "T0617-R03-02",
+      "trips": [
+        {
+          "trip_id": "T0617-R03-01",
+          "vehicle_id": "V09",
+          "kind": "completed",
+          "trip_status": "on_time",
+          "delay_minutes": 0.0,
+          "trust": "ok",
+          "confidence": 0.0,
+          "distance_along_m": 5082,
+          "pct_complete": 1.0,
+          "last_ping_time": "2026-06-17 07:19:31",
+          "data_age_s": 1529,
+          "expected_time_at_position": null,
+          "observed_time_at_position": null,
+          "stopped_minutes": 0.0,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": null,
+          "departure": "06:45"
+        },
+        {
+          "trip_id": "T0617-R03-02",
+          "vehicle_id": "V10",
+          "kind": "live",
+          "trip_status": "on_time",
+          "delay_minutes": 2.0,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 4653,
+          "pct_complete": 0.916,
+          "last_ping_time": "2026-06-17 07:44:27",
+          "data_age_s": 33,
+          "expected_time_at_position": "2026-06-17 07:42:28",
+          "observed_time_at_position": "2026-06-17 07:44:27",
+          "stopped_minutes": 0.5,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": 0,
+          "departure": "07:15"
+        },
+        {
+          "trip_id": "T0617-R03-03",
+          "vehicle_id": "V11",
+          "kind": "live",
+          "trip_status": "unknown",
+          "delay_minutes": 0.6,
+          "trust": "untrustworthy",
+          "confidence": 0.0,
+          "distance_along_m": 496,
+          "pct_complete": 0.098,
+          "last_ping_time": "2026-06-17 07:33:32",
+          "data_age_s": 688,
+          "expected_time_at_position": "2026-06-17 07:32:55",
+          "observed_time_at_position": "2026-06-17 07:33:32",
+          "stopped_minutes": 0.5,
+          "flags": [],
+          "reasons": [
+            "last ping is 11.5 min old (limit 8 min)"
+          ],
+          "riders_ahead_of_bus": 10,
+          "departure": "07:30"
+        }
+      ],
+      "baseline": {
+        "n": 8,
+        "available": true,
+        "median_delay_min": 2.3,
+        "shrunk_delay_min": 1.5,
+        "q25": 0.8,
+        "q75": 3.1
+      }
+    },
+    "dashboard": {
+      "headline": "CANNOT TELL",
+      "severity": "warning",
+      "how_late": "unknown",
+      "certainty": {
+        "label": "Cannot tell",
+        "reason": "the data is not good enough to give a number"
+      },
+      "why": "The last GPS update for the 07:30 trip was 11 min ago, 10% of the way. The 07:15 trip looks fine.",
+      "evidence": [],
+      "alternatives": [
+        "The tracker or phone may have lost signal; the bus could be running fine.",
+        "We do not treat missing data as on time."
+      ],
+      "action": "Phone the driver to confirm where the bus is.",
+      "text": "CANNOT TELL \u00b7 R03 Ghatkopar to BKC\nCertainty: Cannot tell (the data is not good enough to give a number)\nWhy: The last GPS update for the 07:30 trip was 11 min ago, 10% of the way. The 07:15 trip looks fine.\nCould also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.\nDo next: Phone the driver to confirm where the bus is.",
+      "word_count": 79,
+      "read_seconds": 24
+    }
+  },
+  "R04": {
+    "route_id": "R04",
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "late",
+    "delay_minutes": 34.6,
+    "confidence": 0.95,
+    "explanation": "Thane to Andheri is LATE at 07:45 by about 35 min. Trip T0617-R04-02 (vehicle V14) was last seen 30s ago, 5.4 km along the route (32%); the timetable has it there at 07:10 and it was there at 07:44. It has barely moved for 32 min while still reporting, so a rider notification will not fix this: contact the driver. 10 booked riders have not yet reached their boarding stop on this trip. Context: over 8 earlier trips this route typically reaches the end +7.1 min vs the timetable (middle half +3.4 to +11.6); history this thin is indicative only. Relative to that usual pattern, today is about +28 min.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": "T0617-R04-02",
+      "trips": [
+        {
+          "trip_id": "T0617-R04-01",
+          "vehicle_id": "V13",
+          "kind": "completed",
+          "trip_status": "on_time",
+          "delay_minutes": 0.0,
+          "trust": "ok",
+          "confidence": 0.0,
+          "distance_along_m": 17146,
+          "pct_complete": 1.0,
+          "last_ping_time": "2026-06-17 07:40:57",
+          "data_age_s": 243,
+          "expected_time_at_position": null,
+          "observed_time_at_position": null,
+          "stopped_minutes": 0.0,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": null,
+          "departure": "06:15"
+        },
+        {
+          "trip_id": "T0617-R04-02",
+          "vehicle_id": "V14",
+          "kind": "live",
+          "trip_status": "late",
+          "delay_minutes": 34.6,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 5441,
+          "pct_complete": 0.317,
+          "last_ping_time": "2026-06-17 07:44:30",
+          "data_age_s": 30,
+          "expected_time_at_position": "2026-06-17 07:10:23",
+          "observed_time_at_position": "2026-06-17 07:44:30",
+          "stopped_minutes": 32.5,
+          "flags": [
+            "STOPPED"
+          ],
+          "reasons": [],
+          "riders_ahead_of_bus": 10,
+          "departure": "06:45"
+        },
+        {
+          "trip_id": "T0617-R04-03",
+          "vehicle_id": "V15",
+          "kind": "live",
+          "trip_status": "on_time",
+          "delay_minutes": 2.4,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 5800,
+          "pct_complete": 0.338,
+          "last_ping_time": "2026-06-17 07:44:27",
+          "data_age_s": 33,
+          "expected_time_at_position": "2026-06-17 07:42:03",
+          "observed_time_at_position": "2026-06-17 07:44:27",
+          "stopped_minutes": 0.0,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": 4,
+          "departure": "07:15"
+        },
+        {
+          "trip_id": "T0617-R04-04",
+          "vehicle_id": "V16",
+          "kind": "live",
+          "trip_status": "on_time",
+          "delay_minutes": 0.0,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 23,
+          "pct_complete": 0.001,
+          "last_ping_time": "2026-06-17 07:44:32",
+          "data_age_s": 28,
+          "expected_time_at_position": "2026-06-17 07:45:00",
+          "observed_time_at_position": null,
+          "stopped_minutes": 11.6,
+          "flags": [
+            "AT_ORIGIN"
+          ],
+          "reasons": [],
+          "riders_ahead_of_bus": 6,
+          "departure": "07:45"
+        }
+      ],
+      "baseline": {
+        "n": 8,
+        "available": true,
+        "median_delay_min": 7.1,
+        "shrunk_delay_min": 4.7,
+        "q25": 3.4,
+        "q75": 11.6
+      }
+    },
+    "dashboard": {
+      "headline": "LATE by about 35 min",
+      "severity": "critical",
+      "how_late": "about 35 min behind the timetable",
+      "certainty": {
+        "label": "High",
+        "reason": "GPS updated 30 seconds ago"
+      },
+      "why": "Bus V14 has barely moved for 32 min, but its GPS is still updating.",
+      "evidence": [
+        "It is 32% of the way along the route, 35 min behind where the timetable puts it.",
+        "10 booked riders are still waiting at stops ahead."
+      ],
+      "alternatives": [
+        "A planned wait or driver break that our timetable does not know about.",
+        "Heavy traffic or an incident on the road."
+      ],
+      "action": "Call the driver now.",
+      "text": "LATE by about 35 min \u00b7 R04 Thane to Andheri\nCertainty: High (GPS updated 30 seconds ago)\nWhy: Bus V14 has barely moved for 32 min, but its GPS is still updating.\nEvidence: It is 32% of the way along the route, 35 min behind where the timetable puts it. 10 booked riders are still waiting at stops ahead.\nCould also be: A planned wait or driver break that our timetable does not know about. Heavy traffic or an incident on the road.\nDo next: Call the driver now.",
+      "word_count": 89,
+      "read_seconds": 27
+    }
+  }
+}

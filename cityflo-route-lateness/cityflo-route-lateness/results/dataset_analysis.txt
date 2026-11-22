@@ -1,0 +1,111 @@
+==================================================================================================== 
+1. LATENESS BY ROUTE AND DAY (arrival delay vs timetable, minutes, completed trips only)
+          median                            count                      
+date  2026-06-15 2026-06-16 2026-06-17 2026-06-15 2026-06-16 2026-06-17
+route                                                                  
+R01          6.2        5.9        2.9          4          4          1
+R02          1.7        5.6        1.0          4          4          2
+R03          1.9        2.3        1.6          4          4          2
+R04          3.3       11.9        2.9          4          4          1
+
+min/max end delay per route:
+        min  median   max
+route                   
+R01    2.9     6.1   7.0
+R02    0.7     1.9   6.6
+R03   -0.0     2.0   4.8
+R04    0.2     3.9  13.7
+
+trips with end_delay <= -3 (early): 0 | <= -1: 0
+share of completed trips >= 3 min late, by route:
+ {'R01': 89.0, 'R02': 40.0, 'R03': 20.0, 'R04': 67.0}
+
+DELAY ACCRUAL (median delay at 25/50/75% progress, completed trips):
+       delay@25%  delay@50%  delay@75%  end_delay
+route                                            
+R01          3.0        6.1        6.2        6.1
+R02          0.8        1.7        1.9        1.9
+R03          0.9        1.8        1.9        2.0
+R04          1.9        3.6        4.0        3.9
+
+DEPARTURE DELAY (first ping >= 300 m vs timetable), median by route/date:
+date   2026-06-15  2026-06-16  2026-06-17
+route                                    
+R01           0.2         0.2         0.2
+R02           0.1         0.3         0.1
+R03           0.3         0.3         0.2
+R04           0.1         0.5         0.1
+==================================================================================================== 
+2. DATA QUALITY
+rows: 6979 | unique ping_id: True
+content duplicates (same vehicle,time,lat,lon): 8 | by vehicle: {'V15': 8} | distinct days: ['2026-06-17']
+null speed_kmph: 19 (0.27%)
+out-of-bounds pings: 1 [{'ping_id': 'P006092', 'vehicle_id': 'V10', 'lat': 0.0, 'lon': 0.0, 'recorded_at': Timestamp('2026-06-17 07:29:59')}]
+fleet median delivery delay (s): 6.0 | 95th pct: 9.0
+vehicle-days with median clock skew > 120 s:
+                        median    p95    max
+vehicle_id day                             
+V06        2026-06-17   546.0  549.0  549.0
+pings delivered > 2 min after recorded: 166 
+                          n               first                last            rx_first             rx_last
+vehicle_id day                                                                                            
+V03        2026-06-17   22 2026-06-17 07:34:01 2026-06-17 07:44:31 2026-06-17 07:46:30 2026-06-17 07:46:49
+V06        2026-06-17  144 2026-06-17 06:39:01 2026-06-17 07:50:32 2026-06-17 06:48:09 2026-06-17 07:59:39
+vehicles pinging that are in no trip row: ['V18']
+scheduled vehicle-days with zero pings: [('V07', '2026-06-17')]
+ping cadence: median gap 30.0 s | trips with a gap > 90 s: 0 | longest gap: 60.0 s
+==================================================================================================== 
+3. MISSING EVENTS
+/mnt/user-data/outputs/cityflo-route-lateness/dataset_analysis.py:124: UserWarning: obj.round has no effect with datetime, timedelta, or period dtypes. Use obj.dt.round(...) instead.
+  dropped[["trip_id", "vehicle", "last_dist_pct", "last_ping"]].round(2).to_string(index=False) if len(dropped) else "none")
+trips whose pings stop before the terminal (extract-complete trips only):
+      trip_id vehicle  last_dist_pct           last_ping
+T0617-R03-03     V11            0.1 2026-06-17 07:33:32
+trips with no pings at all: []
+trips run by a different vehicle than scheduled: [{'trip_id': 'T0617-R02-03', 'vehicle': 'V18'}]
+bookings: 777 | trips referenced that are not in trips.csv: ['T0617-R05-01']
+bookings with null promised_eta: 3 ['B000202', 'B000345', 'B000694']
+bookings boarding at the terminus: ['B000592', 'B000593']
+trips with no bookings: []
+==================================================================================================== 
+4. GPS ANOMALIES
+pings > 300 m off their route line (after dropping out-of-bounds): [{'trip_id': 'T0617-R03-02', 'ping_id': 'P006171', 'offset_m': 2557, 'at': Timestamp('2026-06-17 07:33:57')}]
+implied speed > 90 km/h between consecutive in-bounds pings: 3 [{'ping_id': 'P006097', 'vehicle_id': 'V10', 'v': 953698.0}, {'ping_id': 'P006171', 'vehicle_id': 'V10', 'v': 533.0}, {'ping_id': 'P006183', 'vehicle_id': 'V10', 'v': 482.0}]
+reported vs implied speed: median abs difference = 1.1 km/h over 6900 pairs
+==================================================================================================== 
+5. IRREGULAR ROUTE BEHAVIOUR
+trips with a standing run >= 5 min away from origin/terminal:
+      trip_id       date  longest_stand_min  last_dist_pct
+T0617-R04-02 2026-06-17               45.0            0.5
+
+pre-start presence at origin (median minutes before scheduled start the first ping appears): {'R01': 12.0, 'R02': 12.0, 'R03': 12.0, 'R04': 12.0}
+==================================================================================================== 
+6. PROMISED ETA vs ACTUAL BUS ARRIVAL AT THE BOARDING STOP (completed trips)
+bookings evaluated: 728
+         n  promise_minus_timetable  bus_vs_promise_median  pct_bus_gt5_after_promise  pct_bus_gt3_after_timetable
+route                                                                                                             
+R01    216                     -4.0                    7.0                       74.1                         47.7
+R02    166                     -0.0                    0.8                        6.6                         16.3
+R03    133                      3.0                   -2.9                        0.0                          4.5
+R04    213                     -0.0                    0.8                       17.4                         30.0
+==================================================================================================== 
+7. TRIP-LEVEL TABLE (extract-complete trips, Wed only)
+/mnt/user-data/outputs/cityflo-route-lateness/dataset_analysis.py:191: UserWarning: obj.round has no effect with datetime, timedelta, or period dtypes. Use obj.dt.round(...) instead.
+  print(w[["trip_id", "vehicle", "substituted", "skewed", "n_pings", "n_rejected", "arrived", "end_delay", "longest_stand_min", "last_ping"]].round(1).to_string(index=False))
+     trip_id vehicle  substituted  skewed  n_pings  n_rejected  arrived  end_delay  longest_stand_min               last_ping
+T0617-R01-01     V01        False   False      177           0     True        2.9                0.4 2026-06-17 07:46:00.000
+T0617-R01-02     V02        False   False      174           0    False        NaN                0.5 2026-06-17 08:14:30.000
+T0617-R01-03     V03        False   False      115           0    False        NaN                0.4 2026-06-17 08:14:59.000
+T0617-R01-04     V04        False   False       55           0    False        NaN                0.4 2026-06-17 08:14:59.000
+T0617-R02-01     V05        False   False      144           0     True        1.1                0.5 2026-06-17 07:29:32.000
+T0617-R02-02     V06        False    True      144           0     True        0.9                0.5 2026-06-17 07:59:33.500
+T0617-R02-03     V18         True   False      114           0    False        NaN                0.5 2026-06-17 08:14:29.000
+T0617-R02-04     V08        False   False       55           0    False        NaN                0.4 2026-06-17 08:14:59.000
+T0617-R03-01     V09        False   False       94           0     True        1.2                0.6 2026-06-17 07:19:31.000
+T0617-R03-02     V10        False   False       95           2     True        2.0                0.6 2026-06-17 07:49:57.000
+T0617-R03-03     V11        False   False       32           0    False        NaN                0.5 2026-06-17 07:33:32.000
+T0617-R03-04     V12        False   False       74           0    False        NaN                0.6 2026-06-17 08:14:28.000
+T0617-R04-01     V13        False   False      197           0     True        2.9                0.6 2026-06-17 07:40:57.000
+T0617-R04-02     V14        False   False      205           0    False        NaN               45.0 2026-06-17 08:14:59.000
+T0617-R04-03     V15        False   False      144           0    False        NaN                0.6 2026-06-17 08:14:32.000
+T0617-R04-04     V16        False   False       84           0    False        NaN                0.6 2026-06-17 08:14:29.000

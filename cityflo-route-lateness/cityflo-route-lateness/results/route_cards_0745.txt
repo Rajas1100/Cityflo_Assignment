@@ -1,0 +1,25 @@
+LATE by about 12 min · R01 Borivali (W) to BKC
+Certainty: High (GPS updated 31 seconds ago)
+Why: Bus V02 reached its current point at 07:44. The timetable expects it there at 07:32.
+Evidence: 5 booked riders are still waiting at stops ahead. The 07:30 trip could not be checked (GPS last seen 12 min ago).
+Could also be: This route usually ends about 6 min late, so only about 6 min is unusual.
+Do next: Warn riders at stops ahead.
+
+ON TIME · R02 Thane to Navi Mumbai (Vashi)
+Certainty: Medium (GPS updated 26 seconds ago; tracker clock corrected)
+Why: Bus V06 is 79% of the way and 1 min behind the timetable.
+Could also be: The tracker clock was wrong; we corrected it, so the time may be off by a minute.
+Do next: No action; recheck in a few minutes.
+
+CANNOT TELL · R03 Ghatkopar to BKC
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: The last GPS update for the 07:30 trip was 11 min ago, 10% of the way. The 07:15 trip looks fine.
+Could also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+LATE by about 35 min · R04 Thane to Andheri
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V14 has barely moved for 32 min, but its GPS is still updating.
+Evidence: It is 32% of the way along the route, 35 min behind where the timetable puts it. 10 booked riders are still waiting at stops ahead.
+Could also be: A planned wait or driver break that our timetable does not know about. Heavy traffic or an incident on the road.
+Do next: Call the driver now.

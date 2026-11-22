@@ -1,0 +1,380 @@
+--- R01 @ 06:00  [unknown | info | 41 words ~12s]
+No bus in service · R01 Borivali (W) to BKC
+Certainty: High (no trip is scheduled right now)
+Why: No trip on Borivali (W) to BKC is in service at 06:00. Next scheduled departure is 06:30.
+Do next: No action needed.
+
+--- R01 @ 06:40  [on_time | ok | 55 words ~16s]
+ON TIME · R01 Borivali (W) to BKC
+Certainty: High (GPS updated 29 seconds ago)
+Why: Bus V01 is 13% of the way and on schedule.
+Evidence: 20 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R01 @ 07:00  [on_time | ok | 58 words ~17s]
+ON TIME · R01 Borivali (W) to BKC
+Certainty: High (GPS updated 28 seconds ago)
+Why: Bus V01 is 39% of the way and 2 min behind the timetable.
+Evidence: 11 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R01 @ 07:20  [late | warning | 83 words ~25s]
+LATE by about 6 min · R01 Borivali (W) to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V02 reached its current point at 07:19. The timetable expects it there at 07:13.
+Evidence: 11 booked riders are still waiting at stops ahead. It is 20% of the way along the route.
+Could also be: A short traffic delay that may clear within minutes. The departure time may have been changed; check the dispatch sheet.
+Do next: Warn riders at stops ahead.
+
+--- R01 @ 07:35  [late | warning | 89 words ~27s]
+LATE by about 10 min · R01 Borivali (W) to BKC
+Certainty: High (GPS updated 33 seconds ago)
+Why: Bus V02 reached its current point at 07:34. The timetable expects it there at 07:24.
+Evidence: 11 booked riders are still waiting at stops ahead. It is 35% of the way along the route.
+Could also be: This route usually ends about 6 min late, so only about 4 min is unusual. The departure time may have been changed; check the dispatch sheet.
+Do next: Warn riders at stops ahead.
+
+--- R01 @ 07:45  [late | warning | 82 words ~25s]
+LATE by about 12 min · R01 Borivali (W) to BKC
+Certainty: High (GPS updated 31 seconds ago)
+Why: Bus V02 reached its current point at 07:44. The timetable expects it there at 07:32.
+Evidence: 5 booked riders are still waiting at stops ahead. The 07:30 trip could not be checked (GPS last seen 12 min ago).
+Could also be: This route usually ends about 6 min late, so only about 6 min is unusual.
+Do next: Warn riders at stops ahead.
+
+--- R01 @ 07:55  [late | warning | 89 words ~27s]
+LATE by about 12 min · R01 Borivali (W) to BKC
+Certainty: High (GPS updated 31 seconds ago)
+Why: Bus V02 reached its current point at 07:54. The timetable expects it there at 07:42.
+Evidence: 1 booked riders are still waiting at stops ahead. It is 61% of the way along the route.
+Could also be: This route usually ends about 6 min late, so only about 6 min is unusual. The departure time may have been changed; check the dispatch sheet.
+Do next: Warn riders at stops ahead.
+
+--- R01 @ 08:10  [late | warning | 80 words ~24s]
+LATE by about 12 min · R01 Borivali (W) to BKC
+Certainty: High (GPS updated 28 seconds ago)
+Why: Bus V02 reached its current point at 08:09. The timetable expects it there at 07:57.
+Evidence: It is 82% of the way along the route.
+Could also be: This route usually ends about 6 min late, so only about 6 min is unusual. The departure time may have been changed; check the dispatch sheet.
+Do next: Warn riders at stops ahead.
+
+--- R02 @ 06:00  [unknown | info | 43 words ~13s]
+No bus in service · R02 Thane to Navi Mumbai (Vashi)
+Certainty: High (no trip is scheduled right now)
+Why: No trip on Thane to Navi Mumbai (Vashi) is in service at 06:00. Next scheduled departure is 06:30.
+Do next: No action needed.
+
+--- R02 @ 06:40  [on_time | ok | 56 words ~17s]
+ON TIME · R02 Thane to Navi Mumbai (Vashi)
+Certainty: High (GPS updated 28 seconds ago)
+Why: Bus V05 is 17% of the way and on schedule.
+Evidence: 12 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R02 @ 07:00  [on_time | ok | 56 words ~17s]
+ON TIME · R02 Thane to Navi Mumbai (Vashi)
+Certainty: High (GPS updated 29 seconds ago)
+Why: Bus V05 is 52% of the way and on schedule.
+Evidence: 5 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R02 @ 07:20  [on_time | ok | 59 words ~18s]
+ON TIME · R02 Thane to Navi Mumbai (Vashi)
+Certainty: High (GPS updated 31 seconds ago)
+Why: Bus V05 is 88% of the way and 1 min behind the timetable.
+Evidence: 2 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R02 @ 07:35  [on_time | ok | 72 words ~22s]
+ON TIME · R02 Thane to Navi Mumbai (Vashi)
+Certainty: Medium (GPS updated 32 seconds ago; tracker clock corrected)
+Why: Bus V06 is 61% of the way and 1 min behind the timetable.
+Evidence: 3 booked riders are still waiting at stops ahead.
+Could also be: The tracker clock was wrong; we corrected it, so the time may be off by a minute.
+Do next: No action; recheck in a few minutes.
+
+--- R02 @ 07:45  [on_time | ok | 62 words ~19s]
+ON TIME · R02 Thane to Navi Mumbai (Vashi)
+Certainty: Medium (GPS updated 26 seconds ago; tracker clock corrected)
+Why: Bus V06 is 79% of the way and 1 min behind the timetable.
+Could also be: The tracker clock was wrong; we corrected it, so the time may be off by a minute.
+Do next: No action; recheck in a few minutes.
+
+--- R02 @ 07:55  [on_time | ok | 62 words ~19s]
+ON TIME · R02 Thane to Navi Mumbai (Vashi)
+Certainty: High (GPS updated 33 seconds ago; a different bus than scheduled)
+Why: Bus V18 is 42% of the way and 2 min behind the timetable.
+Evidence: 6 booked riders are still waiting at stops ahead.
+Could also be: A different bus than scheduled is running this trip.
+Do next: No action needed.
+
+--- R02 @ 08:10  [on_time | ok | 62 words ~19s]
+ON TIME · R02 Thane to Navi Mumbai (Vashi)
+Certainty: High (GPS updated 31 seconds ago; a different bus than scheduled)
+Why: Bus V18 is 68% of the way and 2 min behind the timetable.
+Evidence: 1 booked riders are still waiting at stops ahead.
+Could also be: A different bus than scheduled is running this trip.
+Do next: No action needed.
+
+--- R03 @ 06:00  [unknown | info | 39 words ~12s]
+No bus in service · R03 Ghatkopar to BKC
+Certainty: High (no trip is scheduled right now)
+Why: No trip on Ghatkopar to BKC is in service at 06:00. Next scheduled departure is 06:45.
+Do next: No action needed.
+
+--- R03 @ 06:40  [unknown | info | 39 words ~12s]
+No bus in service · R03 Ghatkopar to BKC
+Certainty: High (no trip is scheduled right now)
+Why: No trip on Ghatkopar to BKC is in service at 06:40. Next scheduled departure is 06:45.
+Do next: No action needed.
+
+--- R03 @ 07:00  [on_time | ok | 57 words ~17s]
+ON TIME · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 3 seconds ago)
+Why: Bus V09 is 46% of the way and 1 min behind the timetable.
+Evidence: 5 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R03 @ 07:20  [on_time | ok | 54 words ~16s]
+ON TIME · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 32 seconds ago)
+Why: Bus V10 is 13% of the way and on schedule.
+Evidence: 8 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R03 @ 07:35  [on_time | ok | 57 words ~17s]
+ON TIME · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 31 seconds ago)
+Why: Bus V10 is 58% of the way and 2 min behind the timetable.
+Evidence: 2 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R03 @ 07:45  [unknown | warning | 79 words ~24s]
+CANNOT TELL · R03 Ghatkopar to BKC
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: The last GPS update for the 07:30 trip was 11 min ago, 10% of the way. The 07:15 trip looks fine.
+Could also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+--- R03 @ 07:55  [unknown | warning | 89 words ~27s]
+CANNOT TELL · R03 Ghatkopar to BKC
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: The last GPS update for the 07:30 trip was 21 min ago, 10% of the way. The 07:50 trip looks fine.
+Evidence: 9 booked riders are still waiting at stops ahead.
+Could also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+--- R03 @ 08:10  [unknown | warning | 89 words ~27s]
+CANNOT TELL · R03 Ghatkopar to BKC
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: The last GPS update for the 07:30 trip was 36 min ago, 10% of the way. The 07:50 trip looks fine.
+Evidence: 2 booked riders are still waiting at stops ahead.
+Could also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+--- R04 @ 06:00  [unknown | info | 39 words ~12s]
+No bus in service · R04 Thane to Andheri
+Certainty: High (no trip is scheduled right now)
+Why: No trip on Thane to Andheri is in service at 06:00. Next scheduled departure is 06:15.
+Do next: No action needed.
+
+--- R04 @ 06:40  [on_time | ok | 57 words ~17s]
+ON TIME · R04 Thane to Andheri
+Certainty: High (GPS updated 31 seconds ago)
+Why: Bus V13 is 29% of the way and 2 min behind the timetable.
+Evidence: 7 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R04 @ 07:00  [on_time | ok | 57 words ~17s]
+ON TIME · R04 Thane to Andheri
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V13 is 52% of the way and 3 min behind the timetable.
+Evidence: 7 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- R04 @ 07:20  [late | critical | 89 words ~27s]
+LATE by about 10 min · R04 Thane to Andheri
+Certainty: High (GPS updated 32 seconds ago)
+Why: Bus V14 has barely moved for 8 min, but its GPS is still updating.
+Evidence: It is 32% of the way along the route, 10 min behind where the timetable puts it. 10 booked riders are still waiting at stops ahead.
+Could also be: A planned wait or driver break that our timetable does not know about. Heavy traffic or an incident on the road.
+Do next: Call the driver now.
+
+--- R04 @ 07:35  [late | critical | 89 words ~27s]
+LATE by about 25 min · R04 Thane to Andheri
+Certainty: High (GPS updated 28 seconds ago)
+Why: Bus V14 has barely moved for 22 min, but its GPS is still updating.
+Evidence: It is 32% of the way along the route, 25 min behind where the timetable puts it. 10 booked riders are still waiting at stops ahead.
+Could also be: A planned wait or driver break that our timetable does not know about. Heavy traffic or an incident on the road.
+Do next: Call the driver now.
+
+--- R04 @ 07:45  [late | critical | 89 words ~27s]
+LATE by about 35 min · R04 Thane to Andheri
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V14 has barely moved for 32 min, but its GPS is still updating.
+Evidence: It is 32% of the way along the route, 35 min behind where the timetable puts it. 10 booked riders are still waiting at stops ahead.
+Could also be: A planned wait or driver break that our timetable does not know about. Heavy traffic or an incident on the road.
+Do next: Call the driver now.
+
+--- R04 @ 07:55  [late | critical | 89 words ~27s]
+LATE by about 45 min · R04 Thane to Andheri
+Certainty: High (GPS updated 2 seconds ago)
+Why: Bus V14 has barely moved for 43 min, but its GPS is still updating.
+Evidence: It is 32% of the way along the route, 45 min behind where the timetable puts it. 10 booked riders are still waiting at stops ahead.
+Could also be: A planned wait or driver break that our timetable does not know about. Heavy traffic or an incident on the road.
+Do next: Call the driver now.
+
+--- R04 @ 08:10  [late | critical | 90 words ~27s]
+LATE by about 47 min · R04 Thane to Andheri
+Certainty: High (GPS updated 2 seconds ago)
+Why: Bus V14 reached its current point at 08:09. The timetable expects it there at 07:23.
+Evidence: 9 booked riders are still waiting at stops ahead. It is 48% of the way along the route.
+Could also be: This route usually ends about 7 min late, so only about 40 min is unusual. The departure time may have been changed; check the dispatch sheet.
+Do next: Call the driver and warn riders ahead.
+
+--- fixture 1 Clearly late  [late | warning | 75 words ~22s]
+LATE by about 12 min · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 reached its current point at 07:19. The timetable expects it there at 07:07.
+Evidence: It is 25% of the way along the route.
+Could also be: The departure time may have been changed; check the dispatch sheet. Our timetable may not include a planned wait on this stretch.
+Do next: Warn riders at stops ahead.
+
+--- fixture 2 On time  [on_time | ok | 44 words ~13s]
+ON TIME · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 is 63% of the way and on schedule.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- fixture 3 Early  [early | warning | 59 words ~18s]
+EARLY by about 6 min · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 reached its current point at 07:14. The timetable expects it at 07:20.
+Could also be: The timetable may be too slow on this stretch.
+Do next: Hold the bus at its next stop so riders do not miss it.
+
+--- fixture 4a GPS dropout (long)  [unknown | warning | 74 words ~22s]
+CANNOT TELL · R03 Ghatkopar to BKC
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: The last GPS update for the 07:00 trip was 12 min ago, 18% of the way.
+Could also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+--- fixture 4b GPS dropout (short)  [on_time | ok | 51 words ~15s]
+ON TIME · R03 Ghatkopar to BKC
+Certainty: Low (GPS updated 4 min ago)
+Why: Bus V1 is 45% of the way and 2 min behind the timetable.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action; recheck in a few minutes.
+
+--- fixture 5a Missing trip events: trip without pings  [unknown | warning | 68 words ~20s]
+CANNOT TELL · R03 Ghatkopar to BKC
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: No GPS has been received from the bus on the 07:00 trip.
+Could also be: The tracker may be switched off, or the trip has not started. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+--- fixture 5b Missing trip events: pings without a trip row  [unknown | warning | 64 words ~19s]
+NO SCHEDULED TRIP · R03 Ghatkopar to BKC
+Certainty: Cannot tell (the schedule does not list this bus)
+Why: No trip is scheduled at 07:15, but bus V1 is reporting GPS on this route.
+Could also be: The schedule data may be missing this trip. The bus may be running without a planned trip.
+Do next: Check the schedule; phone the driver if needed.
+
+--- fixture 5c Missing trip events: wrong vehicle on the trip row  [on_time | ok | 47 words ~14s]
+ON TIME · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago; a different bus than scheduled)
+Why: Bus V9 is 63% of the way and on schedule.
+Could also be: A different bus than scheduled is running this trip.
+Do next: No action needed.
+
+--- fixture 6 Duplicate GPS records  [late | warning | 75 words ~22s]
+LATE by about 12 min · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 reached its current point at 07:19. The timetable expects it there at 07:07.
+Evidence: It is 25% of the way along the route.
+Could also be: The departure time may have been changed; check the dispatch sheet. Our timetable may not include a planned wait on this stretch.
+Do next: Warn riders at stops ahead.
+
+--- fixture 7 Out-of-order GPS records  [late | warning | 75 words ~22s]
+LATE by about 12 min · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 reached its current point at 07:19. The timetable expects it there at 07:07.
+Evidence: It is 25% of the way along the route.
+Could also be: The departure time may have been changed; check the dispatch sheet. Our timetable may not include a planned wait on this stretch.
+Do next: Warn riders at stops ahead.
+
+--- fixture 8a Traffic stoppage (long)  [late | critical | 80 words ~24s]
+LATE by about 8 min · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 has barely moved for 8 min, but its GPS is still updating.
+Evidence: It is 40% of the way along the route, 8 min behind where the timetable puts it.
+Could also be: A planned wait or driver break that our timetable does not know about. Heavy traffic or an incident on the road.
+Do next: Call the driver now.
+
+--- fixture 8b Traffic stoppage (short)  [on_time | ok | 47 words ~14s]
+ON TIME · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 is 40% of the way and 2 min behind the timetable.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.
+
+--- fixture 9 Intentional waiting at a timing point  [on_time | ok | 47 words ~14s]
+ON TIME · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 27 seconds ago)
+Why: Bus V1 is waiting at a stop and is not behind schedule.
+Could also be: If the wait continues past its planned time, it becomes a delay.
+Do next: No action needed.
+
+--- fixture 10 Route diversion  [unknown | warning | 71 words ~21s]
+CANNOT TELL · R03 Ghatkopar to BKC
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: The last GPS update for the 07:00 trip was 8 min ago, 25% of the way.
+Could also be: The bus may be on a detour, off its normal route. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+--- fixture parked short of terminus  [late | warning | 89 words ~27s]
+LATE by about 12 min · R03 Ghatkopar to BKC
+Certainty: Low (GPS updated 30 seconds ago)
+Why: Bus V1 has barely moved for 12 min, but its GPS is still updating.
+Evidence: It is 92% of the way along the route, 12 min behind where the timetable puts it.
+Could also be: The bus may have finished and parked away from the last stop. Heavy traffic or an incident on the road.
+Do next: Check whether the bus has reached its last stop; if not, call the driver.
+
+--- fixture ingestion backlog  [late | warning | 85 words ~26s]
+LATE by about 4 min · R03 Ghatkopar to BKC
+Certainty: Medium (GPS updated 5 seconds ago; tracker clock corrected)
+Why: Bus V1 reached its current point at 07:19. The timetable expects it there at 07:15.
+Evidence: It is 52% of the way along the route.
+Could also be: We corrected the tracker clock; if data is simply arriving late, the real gap may be smaller. A short traffic delay that may clear within minutes.
+Do next: Confirm first, then: warn riders at stops ahead.
+
+--- fixture transient queue  [late | warning | 74 words ~22s]
+LATE by about 3 min · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 reached its current point at 07:13. The timetable expects it there at 07:10.
+Evidence: It is 34% of the way along the route.
+Could also be: A short traffic delay that may clear within minutes. GPS error can add 1 to 2 min to a small delay.
+Do next: Warn riders at stops ahead.
+
+--- fixture late departure  [late | warning | 72 words ~22s]
+LATE by about 5 min · R03 Ghatkopar to BKC
+Certainty: High (GPS updated 30 seconds ago)
+Why: Bus V1 has not left the start yet. It was due out at 07:00.
+Could also be: The departure time may have been changed or boarding is still under way. Our timetable may not include a planned wait on this stretch.
+Do next: Check the bus has left; warn riders if it has not.
+
+cards checked: 50 | severity mix: {'warning': 20, 'ok': 19, 'critical': 6, 'info': 5}
+words: min 39, median 68, max 90 | read time max 27 s
+all cards pass C1-C6

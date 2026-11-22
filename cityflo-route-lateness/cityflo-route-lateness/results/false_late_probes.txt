@@ -1,0 +1,20 @@
+                                  probe  status  delay  confidence               flags  false_late
+              P1 gap after a slow patch    late    4.0        0.51                  []        True
+           P2 along-track drift (700 m)    late    4.7        0.95                  []        True
+        P3 late departure that recovers    late    5.0        0.95         [AT_ORIGIN]        True
+   P4 planned halt not in the timetable    late    3.3        0.95           [STOPPED]        True
+P5 parks short of terminus / short-turn    late   12.3        0.57 [STOPPED, NEAR_END]        True
+                P6 transient bottleneck    late    3.5        0.95                  []        True
+      P7a stale trip schedule (+10 min)    late   10.0        0.95                  []        True
+        P7b uniform device clock +4 min on_time    0.5        0.71   [CLOCK_CORRECTED]       False
+          P7c ingestion backlog (4 min)    late    4.4        0.71   [CLOCK_CORRECTED]        True
+
+false-late verdicts: 8 of 9
+
+P8 median arrival delay by baseline window (days 15=Mon, 16=Tue):
+ day     15    16  both days  mon-vs-tue gap
+route                                      
+R01    6.2   5.9        6.2            -0.3
+R02    1.7   5.6        3.4             3.9
+R03    1.9   2.3        2.3             0.4
+R04    3.3  11.9        7.1             8.6

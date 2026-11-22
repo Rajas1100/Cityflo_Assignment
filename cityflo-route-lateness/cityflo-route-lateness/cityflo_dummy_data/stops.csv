@@ -1,0 +1,27 @@
+stop_id,stop_name,lat,lon,route_id,seq
+S_BORW,Borivali Station (W),19.2307,72.8567,R01,1
+S_KNDV,Kandivali Thakur Village,19.207,72.874,R01,2
+S_MALD,Malad Mindspace,19.1795,72.8365,R01,3
+S_GORG,Goregaon Oberoi Mall,19.1663,72.8526,R01,4
+S_JOGE,Jogeshwari WEH,19.136,72.849,R01,5
+S_ANDM,Andheri WEH Metro,19.1197,72.8464,R01,6
+S_ARPT,Airport Santacruz WEH,19.097,72.8553,R01,7
+S_BKC,BKC Jio Garden,19.069,72.868,R01,8
+S_THN,Thane Station,19.186,72.9759,R02,1
+S_TEEN,Teen Hath Naka,19.179,72.983,R02,2
+S_AIRO,Airoli Naka,19.165,72.999,R02,3
+S_RABL,Rabale MIDC,19.14,73.003,R02,4
+S_GHAN,Ghansoli,19.117,73.009,R02,5
+S_KOPR,Koparkhairane,19.103,73.011,R02,6
+S_VASH,Vashi Sector 17,19.0745,72.999,R02,7
+S_GHAT,Ghatkopar Station,19.086,72.908,R03,1
+S_VIDY,Vidyavihar,19.079,72.897,R03,2
+S_KURK,Kurla Kamani,19.072,72.888,R03,3
+S_KURS,Kurla Station (W),19.065,72.879,R03,4
+S_BKC,BKC Jio Garden,19.069,72.868,R03,5
+S_THN,Thane Station,19.186,72.9759,R04,1
+S_MULD,Mulund Check Naka,19.174,72.956,R04,2
+S_BHAN,Bhandup Pump House,19.152,72.938,R04,3
+S_POWA,Powai Hiranandani,19.119,72.905,R04,4
+S_JVLR,JVLR SEEPZ,19.129,72.879,R04,5
+S_ANDM,Andheri WEH Metro,19.1197,72.8464,R04,6

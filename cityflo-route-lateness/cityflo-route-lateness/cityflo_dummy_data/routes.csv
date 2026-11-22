@@ -1,0 +1,5 @@
+route_id,route_name,origin_stop,dest_stop,scheduled_runtime_min,stops_count
+R01,Borivali (W) to BKC,S_BORW,S_BKC,70,8
+R02,Thane to Navi Mumbai (Vashi),S_THN,S_VASH,55,7
+R03,Ghatkopar to BKC,S_GHAT,S_BKC,30,5
+R04,Thane to Andheri,S_THN,S_ANDM,80,6

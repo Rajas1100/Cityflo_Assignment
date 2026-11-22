@@ -1,0 +1,152 @@
+[
+  {
+    "case": "1 Clearly late",
+    "passed": true,
+    "status": "late",
+    "delay": 12.0,
+    "confidence": 0.95,
+    "flags": [],
+    "expected": "status=late, delay 11-13 min, confidence >= 0.8",
+    "explanation": "Ghatkopar to BKC is LATE at 07:20 by about 12 min. Trip T1 (vehicle V1) was last seen 30s ago, 1.3 km along the route (25%); the timetable has it there at 07:07 and it was there at 07:19."
+  },
+  {
+    "case": "2 On time",
+    "passed": true,
+    "status": "on_time",
+    "delay": 0.5,
+    "confidence": 0.95,
+    "flags": [],
+    "expected": "status=on_time, |delay| < 3, no flags",
+    "explanation": "Ghatkopar to BKC is on time at 07:20 (within 3 min of the timetable). Trip T1 (vehicle V1) was last seen 30s ago, 3.2 km along the route (63%); the timetable has it there at 07:18 and it was there at 07:19."
+  },
+  {
+    "case": "3 Early",
+    "passed": true,
+    "status": "early",
+    "delay": -5.9,
+    "confidence": 0.95,
+    "flags": [],
+    "expected": "status=early, delay about -6 (between -7 and -5)",
+    "explanation": "Ghatkopar to BKC is EARLY at 07:15 by about 6 min. Trip T1 (vehicle V1) was last seen 30s ago, 3.5 km along the route (68%); the timetable has it there at 07:20 and it was there at 07:14."
+  },
+  {
+    "case": "4a GPS dropout (long)",
+    "passed": true,
+    "status": "unknown",
+    "delay": null,
+    "confidence": 0.2,
+    "flags": [],
+    "expected": "status=unknown, delay=null, reason mentions age of last ping",
+    "explanation": "Cannot tell whether Ghatkopar to BKC is late at 07:20. Trip T1 could not be assessed: last ping is 12.5 min old (limit 8 min). Last known position was 0.9 km along the route."
+  },
+  {
+    "case": "4b GPS dropout (short)",
+    "passed": true,
+    "status": "on_time",
+    "delay": 2.0,
+    "confidence": 0.51,
+    "flags": [],
+    "expected": "status=on_time, delay about 2, confidence reduced (< 0.9) versus a clean run",
+    "explanation": "Ghatkopar to BKC is on time at 07:19 (within 3 min of the timetable). Trip T1 (vehicle V1) was last seen 210s ago, 2.3 km along the route (45%); the timetable has it there at 07:13 and it was there at 07:15. Confidence note: last ping is 3.5 min old."
+  },
+  {
+    "case": "5a Missing trip events: trip without pings",
+    "passed": true,
+    "status": "unknown",
+    "delay": null,
+    "confidence": 0.2,
+    "flags": [
+      "NO_DATA"
+    ],
+    "expected": "status=unknown, explanation says no usable pings",
+    "explanation": "Cannot tell whether Ghatkopar to BKC is late at 07:15. Trip T1 could not be assessed: no usable GPS pings for this trip."
+  },
+  {
+    "case": "5b Missing trip events: pings without a trip row",
+    "passed": true,
+    "status": "unknown",
+    "delay": null,
+    "confidence": 0.0,
+    "flags": [],
+    "expected": "status=unknown, explanation says no trip in service",
+    "explanation": "No trip on Ghatkopar to BKC is in service at 07:15. However, vehicle(s) V1 are reporting GPS on this route with no scheduled trip."
+  },
+  {
+    "case": "5c Missing trip events: wrong vehicle on the trip row",
+    "passed": true,
+    "status": "on_time",
+    "delay": 0.5,
+    "confidence": 0.85,
+    "flags": [
+      "VEHICLE_SUBSTITUTED"
+    ],
+    "expected": "status=on_time, flag VEHICLE_SUBSTITUTED, confidence slightly reduced",
+    "explanation": "Ghatkopar to BKC is on time at 07:20 (within 3 min of the timetable). Trip T1 (vehicle V9) was last seen 30s ago, 3.2 km along the route (63%); the timetable has it there at 07:19 and it was there at 07:19. Confidence note: pings come from V9, not the schedule"
+  },
+  {
+    "case": "6 Duplicate GPS records",
+    "passed": true,
+    "status": "late",
+    "delay": 12.0,
+    "confidence": 0.95,
+    "flags": [],
+    "expected": "identical to case 1 (same status, delay within 0.1 min)",
+    "explanation": "Ghatkopar to BKC is LATE at 07:20 by about 12 min. Trip T1 (vehicle V1) was last seen 30s ago, 1.3 km along the route (25%); the timetable has it there at 07:07 and it was there at 07:19."
+  },
+  {
+    "case": "7 Out-of-order GPS records",
+    "passed": true,
+    "status": "late",
+    "delay": 12.0,
+    "confidence": 0.95,
+    "flags": [],
+    "expected": "identical to case 1 (delay within 0.3 min)",
+    "explanation": "Ghatkopar to BKC is LATE at 07:20 by about 12 min. Trip T1 (vehicle V1) was last seen 30s ago, 1.3 km along the route (25%); the timetable has it there at 07:07 and it was there at 07:19."
+  },
+  {
+    "case": "8a Traffic stoppage (long)",
+    "passed": true,
+    "status": "late",
+    "delay": 8.5,
+    "confidence": 0.95,
+    "flags": [
+      "STOPPED"
+    ],
+    "expected": "status=late, delay 7-10 min, flag STOPPED, explanation tells ops to contact the driver",
+    "explanation": "Ghatkopar to BKC is LATE at 07:20 by about 8 min. Trip T1 (vehicle V1) was last seen 30s ago, 2.0 km along the route (40%); the timetable has it there at 07:12 and it was there at 07:20. It has barely moved for 8 min while still reporting, so a rider notificat"
+  },
+  {
+    "case": "8b Traffic stoppage (short)",
+    "passed": true,
+    "status": "on_time",
+    "delay": 1.5,
+    "confidence": 0.95,
+    "flags": [],
+    "expected": "status=on_time, no STOPPED flag",
+    "explanation": "Ghatkopar to BKC is on time at 07:14 (within 3 min of the timetable). Trip T1 (vehicle V1) was last seen 30s ago, 2.0 km along the route (40%); the timetable has it there at 07:12 and it was there at 07:13."
+  },
+  {
+    "case": "9 Intentional waiting at a timing point",
+    "passed": true,
+    "status": "on_time",
+    "delay": -0.6,
+    "confidence": 0.95,
+    "flags": [
+      "HOLDING"
+    ],
+    "expected": "status=on_time (or early), NO STOPPED flag, no 'contact the driver' text",
+    "explanation": "Ghatkopar to BKC is on time at 07:14 (within 3 min of the timetable). Trip T1 (vehicle V1) was last seen 27s ago, 2.6 km along the route (52%); the timetable has it there at 07:15 and it was there at 07:14."
+  },
+  {
+    "case": "10 Route diversion",
+    "passed": true,
+    "status": "unknown",
+    "delay": null,
+    "confidence": 0.2,
+    "flags": [
+      "POSSIBLE_DIVERSION"
+    ],
+    "expected": "status=unknown, explanation names off-route pings / possible diversion (not just 'ping is old')",
+    "explanation": "Cannot tell whether Ghatkopar to BKC is late at 07:18. Trip T1 could not be assessed: last ping is 8.5 min old (limit 8 min); 16 recent pings were up to 1.3 km off the route line, so the bus may be on a diversion and its position along the route cannot be meas"
+  }
+]

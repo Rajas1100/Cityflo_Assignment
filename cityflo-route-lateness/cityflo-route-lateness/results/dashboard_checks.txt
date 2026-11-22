@@ -1,0 +1,3 @@
+cards checked: 50 | severity mix: {'warning': 20, 'ok': 19, 'critical': 6, 'info': 5}
+words: min 39, median 68, max 90 | read time max 27 s
+all cards pass C1-C6

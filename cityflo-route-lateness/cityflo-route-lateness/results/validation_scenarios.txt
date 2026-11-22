@@ -1,0 +1,16 @@
+PASS  1 Clearly late                                   status=late     delay=12.0 conf=0.95 flags=[]
+PASS  2 On time                                        status=on_time  delay=0.5 conf=0.95 flags=[]
+PASS  3 Early                                          status=early    delay=-5.9 conf=0.95 flags=[]
+PASS  4a GPS dropout (long)                            status=unknown  delay=None conf=0.2 flags=[]
+PASS  4b GPS dropout (short)                           status=on_time  delay=2.0 conf=0.51 flags=[]
+PASS  5a Missing trip events: trip without pings       status=unknown  delay=None conf=0.2 flags=['NO_DATA']
+PASS  5b Missing trip events: pings without a trip row status=unknown  delay=None conf=0.0 flags=[]
+PASS  5c Missing trip events: wrong vehicle on the trip row status=on_time  delay=0.5 conf=0.85 flags=['VEHICLE_SUBSTITUTED']
+PASS  6 Duplicate GPS records                          status=late     delay=12.0 conf=0.95 flags=[]
+PASS  7 Out-of-order GPS records                       status=late     delay=12.0 conf=0.95 flags=[]
+PASS  8a Traffic stoppage (long)                       status=late     delay=8.5 conf=0.95 flags=['STOPPED']
+PASS  8b Traffic stoppage (short)                      status=on_time  delay=1.5 conf=0.95 flags=[]
+PASS  9 Intentional waiting at a timing point          status=on_time  delay=-0.6 conf=0.95 flags=['HOLDING']
+PASS  10 Route diversion                               status=unknown  delay=None conf=0.2 flags=['POSSIBLE_DIVERSION']
+
+14/14 passed
